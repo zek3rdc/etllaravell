@@ -1,0 +1,39 @@
+# Framework Web
+fastapi>=0.68.0,<0.69.0
+uvicorn>=0.15.0,<0.16.0
+python-multipart>=0.0.5,<0.1.0
+
+# Procesamiento de Datos
+pandas>=1.3.0,<1.4.0
+numpy>=1.21.0,<1.22.0
+openpyxl>=3.0.7,<3.1.0
+xlrd>=2.0.1,<2.1.0
+
+# Base de Datos
+psycopg2-binary>=2.9.1,<2.10.0
+
+# Notificaciones
+requests>=2.26.0,<2.27.0
+aiosmtplib>=1.1.6,<1.2.0
+python-telegram-bot>=13.7,<13.8
+
+# Utilidades
+python-dotenv>=0.19.0,<0.20.0
+pydantic>=1.8.2,<1.9.0
+python-jose[cryptography]>=3.3.0,<3.4.0
+passlib[bcrypt]>=1.7.4,<1.8.0
+
+# Testing
+pytest>=6.2.5,<6.3.0
+pytest-asyncio>=0.15.1,<0.16.0
+httpx>=0.18.2,<0.19.0
+
+# Documentación
+mkdocs>=1.2.3,<1.3.0
+mkdocs-material>=7.3.0,<7.4.0
+
+# Desarrollo
+black>=21.7b0,<21.8b0
+flake8>=3.9.2,<3.10.0
+mypy>=0.910,<0.920
+isort>=5.9.3,<5.10.0
