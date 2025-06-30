@@ -113,7 +113,7 @@ async def root():
         ]
     }
 
-@app.get("/health")
+@app.get("/api/etl/health")
 async def health_check():
     """Endpoint de salud"""
     return {
