@@ -16,7 +16,6 @@ Sistema ETL modular con soporte para validaciones, transformaciones personalizad
 - Activación/desactivación de versiones
 
 ### 3. Transformaciones Personalizadas
-- Editor de código Python integrado
 - Sandbox seguro para ejecución
 - Biblioteca de funciones predefinidas
 - Soporte para parámetros personalizados
@@ -39,16 +38,6 @@ Sistema ETL modular con soporte para validaciones, transformaciones personalizad
 - Estadísticas de uso
 - Trazabilidad completa
 
-### 7. Sistema de Notificaciones
-- Múltiples canales (Email, Slack, Telegram)
-- Plantillas personalizables
-- Reglas de notificación configurables
-- Registro de envíos
-
-### 8. Soporte Multi-idioma
-- Interfaz en múltiples idiomas
-- Mensajes localizados
-- Adaptación cultural
 
 ## Estructura del Proyecto
 
@@ -133,15 +122,6 @@ uvicorn main_advanced:app --reload
 - `GET /api/etl/config/{name}/versions`: Listar versiones
 - `POST /api/etl/config/{name}/activate-version`: Activar versión
 
-#### Historial
-- `GET /api/etl/history`: Historial de cargas
-- `GET /api/etl/history/statistics`: Estadísticas
-- `POST /api/etl/history/{history_id}/rollback`: Revertir carga
-
-#### Notificaciones
-- `POST /api/etl/notifications/config`: Configurar notificaciones
-- `GET /api/etl/notifications/templates`: Plantillas disponibles
-
 ## Ejemplos de Uso
 
 ### 1. Carga y Validación Básica
@@ -195,13 +175,6 @@ status = requests.get(f'http://localhost:8000/api/etl/job-status/{job_id}')
 print(status.json())
 ```
 
-## Contribución
-
-1. Fork el repositorio
-2. Crear rama para feature (`git checkout -b feature/AmazingFeature`)
-3. Commit cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir Pull Request
 
 ## Licencia
 
